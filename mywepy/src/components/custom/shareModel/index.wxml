@@ -1,0 +1,16 @@
+<view class="page">
+    <view bindtap="cancal" class="{{showModel?'box':''}}" catchtouchmove="preventD"></view>
+    <view class="model {{phoneModel?'model-phone':''}} {{showModel?'':'hidden'}}" catchtouchmove="preventD">
+         <view class="model-bottom">
+            <view class="model-frends">
+                发送给朋友
+            </view>
+            <view class="model-pic">
+                生成海报
+            </view>
+         </view>
+         <view bindtap="cancal" class="{{phoneModel?'model-bottom-phone':''}} model-cancal">
+            <view>取消</view>
+         </view>
+    </view>
+</view>

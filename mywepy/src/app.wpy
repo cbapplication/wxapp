@@ -1,0 +1,69 @@
+<style lang="less">
+
+</style>
+
+<script>
+import wepy from 'wepy'
+import 'wepy-async-function'
+
+
+export default class extends wepy.app {
+  config = {
+    pages: [
+      'pages/home',
+      'pages/goods-info',
+      'pages/index',
+      'pages/category',
+      'pages/special',
+      'pages/mine',
+    ],
+    window: {
+      backgroundTextStyle: 'light',
+      navigationBarBackgroundColor: '#fff',
+      navigationBarTitleText: 'WeChat',
+      navigationBarTextStyle: 'black'
+    },
+    tabBar: {
+    //custom:true,//自定义tabbar
+    backgroundColor: '#fff',
+    borderStyle: 'black',
+    color: '#b7b2b3',
+    selectedColor: '#423839',
+    "list": [
+      {
+        "pagePath": "pages/home",
+        "text": "精选",
+      },
+      {
+        "pagePath": "pages/special",
+        "text": "专题"
+      },
+      {
+        "pagePath": "pages/category",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/mine",
+        "text": "我的"
+      }
+    ]
+  }
+  }
+  onLaunch(){
+    try {
+    const res = wx.getSystemInfoSync()
+       this.globalData.phoneModel = res.model
+       console.log(res.model)
+    } catch (e) {
+      // Do something when catch error
+    }
+  }
+  globalData = {
+    userInfo: null,
+    name:"曹宝",
+    phoneModel:'',
+  }
+
+  
+}
+</script>

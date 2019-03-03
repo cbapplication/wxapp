@@ -1,0 +1,74 @@
+.box{
+    width: 750rpx;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left:0;
+    opacity: 0.7;
+    background-color: #000000;
+    z-index: 999;
+    transition: all .3s ease-in-out;
+}
+.model{
+    visibility: visible;
+    position: fixed;
+    width: 750rpx;
+    height: 330rpx;
+    bottom: 0;
+    left: 0;
+    transform: translateY(0%);
+    transition: all .3s ease-in-out;
+    opacity: 1;
+    z-index: 1002;
+}
+/* 适配iPhone */
+.model-phone{
+    height: 380rpx
+}
+.hidden{
+    visibility: hidden;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.model-bottom{
+    margin: 0 auto;
+    width: 720rpx;
+    border-radius: 8rpx;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: PingFangSC;
+    font-size: 30rpx;
+    color: #423839;
+}
+.model-frends{
+    height: 100rpx;
+    line-height: 100rpx;
+    border-bottom: solid 1rpx #e6e6e6;
+}
+.model-pic{
+    height: 100rpx;
+    line-height: 100rpx;
+}
+.model-cancal{
+    width: 750rpx;
+    height: 98rpx;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.model-bottom-phone{
+    height: 145rpx;
+}
+.model-cancal view{
+    width: 720rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius: 49rpx;
+    background-color: #ffc233;
+    font-family: PingFangSC;
+    font-size: 30rpx;
+    text-align: center;
+    color: #000000;
+    margin: 10rpx auto; 
+}

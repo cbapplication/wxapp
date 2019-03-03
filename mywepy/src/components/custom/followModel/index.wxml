@@ -1,0 +1,20 @@
+<view class="page">
+    <view bindtap="close" class="{{showModel?'box':''}}" catchtouchmove="preventD"></view>
+    <view class="model {{showModel?'':'hidden'}}" catchtouchmove="preventD">
+         <view bindtap="close" class="model-close">
+             <image src="../../../static/images/sy_jinrudianpu_jiantou@3x.png"/>
+         </view>
+         <view class="model-title">
+            <image src="../../../static/images/guanzhuchenggong.png"/>关注成功
+         </view>
+         <view class="model-text">
+            1.您好，此拍品将在 {{timeStr}} 结拍我们会在结拍前提醒您，防止您错过结拍时间。
+         </view>
+         <view class="model-text">
+            2.为营造公平公正的良好环境，参与竞拍需缴纳起拍价10%的保证金
+         </view>
+         <view class="model-text">
+            3.如有疑问，请点击联系客服了解详情
+         </view>
+    </view>
+</view>

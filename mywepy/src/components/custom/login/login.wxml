@@ -1,0 +1,18 @@
+<view class="page" hidden="{{show}}">
+    <view  class="box" catchtouchmove="preventD"></view>
+    <view class="modal" catchtouchmove="preventD">
+         <view class="modal-title">
+            <view>手机号登录</view>
+            <image bindtap="handclose" src="../../../static/images/close.png" />
+         </view>
+         <view class="modal-phone">
+            <input bindinput="phone" type="number" maxlength="11" placeholder="请输入手机号"></input>
+         </view>
+         <view class="modal-Code">
+            <input bindinput="code" class="code" type="number" placeholder="请输入验证码"></input>
+            <view class="btn" bindtap="getCode">{{btntext}}</view>
+         </view>
+         <view class="modal-read">登录即代表同意<text>茗探平台拍卖协议</text></view>
+         <view bindtap="login" class="modal-btn">登录</view>
+    </view>
+</view>

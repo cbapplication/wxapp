@@ -1,0 +1,30 @@
+.page{
+    margin: 0;
+    padding: 0;
+}
+.tab-bar{
+    display: flex;
+    flex: 4;
+    width: 750rpx;
+    height: 98rpx;
+    box-shadow: 0 -1rpx 12rpx 1rpx rgba(232, 228, 228, 0.5);
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.view{
+    flex: 1;
+    text-align: center;
+    height: 98rpx;
+    line-height: 98rpx;
+    font-size: 32rpx;
+    font-weight: 500;
+    color: #b7b2b3;
+}
+.active{
+    font-family: PingFangSC;
+    font-size: 36rpx;
+    font-weight: 600;
+    color: #423839; 
+}

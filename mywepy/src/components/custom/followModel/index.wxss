@@ -1,0 +1,71 @@
+.box{
+    width: 750rpx;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left:0;
+    opacity: 0.7;
+    background-color: #000000;
+    z-index: 999;
+    transition: all .3s ease-in-out;
+}
+.model{
+    visibility: visible;
+    position: fixed;
+    width: 630rpx;
+    height: 588rpx;
+    bottom: 0;
+    left: 0;
+    transform: translateY(0%);
+    transition: all .3s ease-in-out;
+    opacity: 1;
+    padding: 10rpx 60rpx;
+    background-color: #ffffff;
+    z-index: 1000;
+    border-top-left-radius: 24rpx;
+    border-top-right-radius: 24rpx
+}
+.hidden{
+    visibility: hidden;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.model-close{
+    width: 60rpx;
+    height: 60rpx;
+    margin: 0 auto 30rpx auto;
+}
+.model-close image{
+    width: 60rpx;
+    height: 60rpx;
+    transform:rotate(90deg);
+}
+.model-title{
+    width: 180rpx;
+    margin: 0 auto 34rpx auto;
+    font-family: PingFangSC;
+    font-size: 32rpx;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #423839;
+}
+.model-title image{
+    width: 36rpx;
+    height: 36rpx;
+    position: relative;
+    top: 6rpx;
+}
+.model-text{
+    font-family: PingFangSC;
+    font-size: 26rpx;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #423839; 
+    margin-bottom: 30rpx
+}

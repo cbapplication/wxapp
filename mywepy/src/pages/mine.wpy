@@ -1,0 +1,116 @@
+<style lang="less">
+.page{
+   width: 750rpx;
+   height: 100%;
+}
+</style>
+<template>
+  <view class="page">
+     mine 
+  </view>
+</template>
+
+<script>
+  import wepy from 'wepy'
+  import { users, companies, gruopTime } from "@api/users";
+
+  export default class mine extends wepy.page {
+    config = {
+      navigationBarTitleText: 'test',
+      usingComponents: {
+          'i-load-more': '../components/base/load-more',
+          'i-swipeout':'../components/base/swipeout',
+      }
+    }
+
+    data = {
+        num:0,
+        actions: [
+          {
+            name: "删除",
+            color: "#fff",
+            fontsize: "35",
+            width: 63,
+            background: "#FA3E3E"
+          }
+        ],
+        gruopTime:{},
+        time:"",
+        timer:null,
+    }
+    methods={
+      tapAction(e){
+         console.log(e)
+      }
+    }
+    computed = {
+      // num(){
+      //   return this.num
+      // }
+    }
+    
+    counter(){
+      setInterval(()=>{
+         this.num++;
+         this.$apply()
+      },1000)
+    }
+    async onLoad() {
+      // this.getUsers();
+      // this.getGruopTime()
+      // setInterval(() => {
+      //   clearInterval(this.timer)
+      // },5000)
+    }
+
+    // onUnload(){
+    //   console.log(333)
+    //   if (this.timer) {
+    //     clearInterval(this.timer);
+    //   }
+    // }
+
+    async getGruopTime(){
+      const data = await gruopTime();
+      this.gruopTime = data[0]
+      console.log(this.gruopTime);
+      this.$apply()
+      this.counter();
+    }
+
+    async getUsers(){
+      const d = await users()
+      this.demo = d
+      console.log(d)
+    }
+
+    //定时器函数
+    counter(){
+      this.timer = setInterval(() =>{
+      let now = new Date().getTime();
+      let start = new Date(this.gruopTime.startTime).getTime();
+      let end = new Date(this.gruopTime.endTime).getTime();
+      let that = this;
+      if(now<start){
+        this.time = "还没到开团时间"
+        this.$apply()
+      }else if(now>end){
+        this.time = "团购已结束"
+        this.$apply()
+      }else{
+        let time = that.parseTime(end - now)
+        that.time = time;
+        that.$apply()
+      }  
+       },1000)  
+    }
+
+    parseTime(str) {
+      var days = parseInt(str / (1000 * 60 * 60 * 24));
+      var hours = parseInt((str % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = parseInt((str % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = parseInt((str % (1000 * 60)) / 1000);
+      return days + "天" + hours + "时" + minutes + "分" + seconds + "秒";
+    }
+  }
+</script>

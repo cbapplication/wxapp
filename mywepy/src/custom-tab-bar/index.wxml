@@ -1,0 +1,5 @@
+<view class="page">
+    <view class="tab-bar">
+      <view bindtap="tab" class="view {{tabId==index?'active':''}}" wx:for="{{list}}" wx:key="this" data-index="{{item.id}}">{{item.text}}</view>
+    </view>  
+</view>

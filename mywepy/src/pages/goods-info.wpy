@@ -1,0 +1,434 @@
+<style lang="less">
+page{
+    background-color: rgb(245,246,250);
+    padding: 0;
+    margin: 0;
+    width:100%;
+    overflow-x:hidden;
+}
+.page{
+   width: 750rpx;
+   margin: 0;
+   padding: 0;
+   .page-head{
+      .swiper{
+            width: 750rpx;
+            height: 600rpx;
+            .index{
+                border-radius: 8rpx;
+                background-color: #ffffff;
+                position: fixed;
+                top: 545rpx;
+                left: 610rpx;
+                z-index: 999;
+                padding:6rpx 20rpx;
+                font-family: PingFangSC;
+                font-size: 26rpx;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #000000;
+                opacity: 0.6;
+            }
+            image{
+                margin: 0;
+                width: 750rpx;
+                height: 600rpx;
+            }
+      }
+      .body-status{
+        height: 56rpx;
+        line-height: 56rpx;
+        position: relative;
+        top: -57rpx;
+        left: 0;
+        .status{
+            background-color: rgb(255, 194, 51);
+            padding: 10rpx 12rpx 10rpx 20rpx;
+            color: rgb(0, 0, 0);
+            font-size: 26rpx;
+            font-family: PingFangSC-Medium;
+        }
+        .time{
+            background-color: rgb(245, 246, 250);
+            opacity: 0.6;
+            padding: 7rpx 26rpx 8rpx 26rpx;
+            color: rgb(0, 0, 0);
+            font-size: 30rpx;
+            font-family: PingFangSC-Regular;
+            font-weight: 600;
+        }
+    }
+    .goods-info{
+        margin-top: -60rpx;
+        padding: 24rpx 30rpx;
+        background-color: #ffffff;
+        .goods-name{
+            font-family: PingFangSC;
+            font-size: 36rpx;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: justify;
+            color: #423839;
+            .name{
+                width: 616rpx;
+            }
+            .share{
+                float: right;
+                position: relative;
+                top: -102rpx;
+                image{
+                    width: 50rpx;
+                    height: 50rpx;
+                }
+                view{
+                    font-family: PingFangSC;
+                    font-size: 18rpx;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #423839;
+                    text-align: center;
+                    margin-top: -15rpx;
+                }
+            }
+        }
+        .curPrice{
+            font-family: PingFangSC;
+            font-size: 28rpx;
+            color: #463c3d;
+            text{
+                font-family: PingFangSC;
+                font-size: 48rpx;
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #faaf0c;
+
+            }  
+        }
+        .flex{
+            width: 100%;
+            display: flex;
+            view{
+                flex: 1;
+                font-family: PingFangSC;
+                font-size: 28rpx;
+                color: #423839;
+            }
+        }
+    }
+   }
+   .introduce{
+        padding: 38rpx 0 8rpx 30rpx;
+        font-family: PingFangSC;
+        font-size: 24rpx;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #666666;
+   }
+   .goods-info-desc {
+        padding: 20rpx;
+        background-color: #ffffff;
+	}
+   .store{
+       background-color: #ffffff;
+       margin: 0;
+       padding: 24rpx 30rpx 14rpx 30rpx;
+       image{
+           display: inline-block;
+           width: 120rpx;
+           height: 120rpx;
+           border-radius: 10rpx;
+       }
+       .detail{
+           display: inline-block;
+           position: relative;
+           top: -25rpx;
+           left: 34rpx;
+           .name{
+                font-family: PingFangSC;
+                font-size: 32rpx;
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #423839;
+                margin-bottom: 12rpx;
+           }
+           .number{
+               font-family: PingFangSC;
+                font-size: 24rpx;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #797475;
+
+           }
+       }
+       .goStore{
+            display: inline-block;
+            font-family: PingFangSC;
+            font-size: 24rpx;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #797475;
+            position: relative;
+            right: -100rpx;
+            top: -50rpx;
+            image{
+                width: 40rpx;
+                height: 40rpx;
+                position: relative;
+                top: 13rpx;
+                right: 15rpx;
+            }
+       }
+   }
+   .role{
+        margin-bottom: 2rpx;
+        width: 690rpx;
+        padding: 24rpx 30rpx;
+        font-family: PingFangSC;
+        font-size: 26rpx;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #666666;
+        float: left;
+        background-color: #ffffff;
+       image{
+           width: 20px;
+           height: 20px;
+           float: right;
+           position: relative;
+           right: -10rpx;
+       }
+   }
+   .margin-bottom{
+       margin-bottom: 145rpx;
+   }
+   .bottom{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 750rpx;
+        height: 98rpx;   
+        box-shadow: 0 -1rpx 12rpx 1rpx rgba(232, 228, 228, 0.5);
+        background-color: #ffffff;
+        display: flex;
+        flex:7;
+        z-index: 1001;
+        .left{
+            flex: 1;
+            font-family: PingFangSC;
+            font-size: 18rpx;
+            text-align: center;
+            color: #423839;
+            margin: 7rpx auto 16rpx auto;
+            image{
+                width: 60rpx;
+                height: 60rpx;
+            }
+            view{
+                margin-top: -12rpx
+            }
+        }
+        .right{
+            flex: 4;
+            height: 80rpx;
+            border-radius: 49rpx;
+            background-color: #ffc233;
+            font-family: PingFangSC;
+            font-size: 30rpx;
+            text-align: center;
+            line-height: 80rpx;
+            color: #000000;
+            margin: 10rpx 14rpx;
+        }
+   }
+   .bottom-phone{
+       height: 145rpx;
+   }
+}
+</style>
+<template>
+  <view class="page">
+    <scroll-view scroll-y scroll-with-animation>
+        <import src="../utils/wxParse/wxParse.wxml"/>
+        <view class="page-head">
+            <swiper class="swiper"
+                indicator-dots="{{indicatorDots}}"
+                autoplay="{{autoplay}}"
+                interval="{{interval}}"
+                duration="{{duration}}"
+                >
+                <block wx:for="{{imgUrls}}" wx:key="this">
+                    <swiper-item>
+                    <image src="{{item}}"/>
+                    <view class="index">{{(index+1)+'/'+imgUrls.length}}</view>
+                    </swiper-item>
+                    
+                </block>
+            </swiper>
+            <view class="body-status">
+                <text class="status">拍卖中</text>
+                <text class="time">距离结束 06天23时59分50秒</text>
+            </view>
+            <view class="goods-info">
+                <view class="goods-name">
+                    <view class="name">日本昭和时期桔梗窑水龙茶壶日本皇家御用筹字数</view>
+                    <view @tap="shareClick" class="share">
+                        <image src="../static/images/share.png"/>
+                        <view>分享</view>
+                    </view>
+                </view>
+                <view class="curPrice">当前价：<text>￥300,000</text></view>
+                <view class="flex">
+                    <view>参考价：¥40万～50万</view>
+                    <view>图录号：1857382910</view>
+                </view>
+                <view class="flex">
+                    <view>保证金：¥10000</view>
+                    <view>加价幅度：¥1000</view>
+                </view>
+            </view>
+        </view>
+        <view class="introduce">店铺介绍</view>
+        <view class="store">
+            <image src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3218770632,685286103&fm=26&gp=0.jpg"/>
+            <view class="detail">
+                <view class="name">轻井泽威士忌</view>
+                <view class="number">在售件数：327件 成交数：289件</view>
+            </view>
+            <view class="goStore">进入店铺
+                <image src="../static/images/sy_jinrudianpu_jiantou@3x.png"/>
+            </view>
+        </view>
+        <view class="introduce">拍品介绍</view>
+        <!-- 拍品详情 -->
+        <view class="goods-info-desc">
+          <template is="wxParse" data="{{wxParseData:htmlStr.nodes}}"></template>
+        </view>
+        <view class="introduce">帮助中心</view>
+        <view class="role">加价规则
+            <image src="../static/images/sy_jinrudianpu_jiantou@3x.png"/>
+        </view>
+        <view class="role margin-bottom">保证金规则
+            <image src="../static/images/sy_jinrudianpu_jiantou@3x.png"/>
+        </view>
+    </scroll-view>
+    <!-- 关注弹框 -->
+    <followModel phoneModel="{{phoneModel}}" bind:_close="closeModel" showModel="{{show}}"/>
+    <!-- 分享弹框 -->
+    <shareModel phoneModel="{{phoneModel}}" bind:_cancal="cancalModel" showModel="{{shareShow}}"/>
+    <view class="bottom {{phoneModel?'bottom-phone':''}}">
+        <view @tap="showClick" class="left">
+            <image src="../static/images/shoucang.png"/>
+            <view>关注</view>
+        </view>
+        <view class="left">
+            <image src="../static/images/kefu.png"/>
+            <view>客服</view>
+        </view>
+        <view class="left">
+            <image src="../static/images/chujiajilu.png"/>
+            <view>出价记录</view>
+        </view>
+        <view class="right">出价</view>
+    </view>
+</view>
+</template>
+
+<script>
+  import wepy from 'wepy'
+  import WxParse from "@/utils/wxParse/wxParse";
+  export default class Index extends wepy.page {
+    config = {
+      navigationBarTitleText: '茗探',
+      usingComponents: {
+          'followModel': '../components/custom/followModel/index',
+          'shareModel': '../components/custom/shareModel/index',
+      }
+    }
+
+    data = {
+       show:false,//关注
+       shareShow:false,//分享
+       phoneModel:'',//手机
+       imgUrls: [
+        'http://img3.imgtn.bdimg.com/it/u=3782685451,3066622536&fm=26&gp=0.jpg',
+        'http://img1.3lian.com/img013/v5/21/d/84.jpg',
+        'http://img17.3lian.com/d/file/201702/14/3d1d78481dbe5db4802f4b1eb548f365.jpg'
+        ],
+        indicatorDots: false,
+        autoplay: true,
+        interval: 3000,
+        duration: 1000,
+        desc:"<p style='font-size:15px'>这是一段测试代码这是一段测试代码这是一段测试代码这是一段测试代码</p><img style='width:100%;height:200rpx' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1551336381743&di=95ac54a3c7879272fcd10871825890c7&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201202%2F01%2F20120201213638_YBnau.thumb.700_0.jpg'/><img src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1551336381743&di=677c64d1c5577e3cde276b1bf3bfdc58&imgtype=0&src=http%3A%2F%2Fseopic.699pic.com%2Fphoto%2F50052%2F1203.jpg_wh1200.jpg'/>"
+    }
+    methods={
+        //打开关注
+        showClick(){
+            this.show = true;
+            this.$apply()
+        },
+        //关闭关注
+        closeModel(){
+            this.show = false;
+            this.$apply()
+        },
+        //打开分享
+        shareClick(){
+            this.shareShow = true;
+            this.$apply()
+        },
+        //关闭分享
+        cancalModel(){
+            this.shareShow = false;
+            this.$apply()
+        },
+    }
+    computed = {
+    }
+    wxParseImgLoad(e) {}
+    onLoad() {
+        //适配iPhone X、iPhone XS、iPhone XS MAX、iPhone XR
+        let model = this.$parent.globalData.phoneModel;
+        if(-1 != model.search("iPhone X")||-1 != model.search("iPhone XS")||-1 != model.search("iPhone XS MAX")||-1 != model.search("iPhone XR")){
+            this.phoneModel = true;
+            this.$apply();
+        }else{
+            this.phoneModel = false
+            this.$apply()
+        }
+        //富文本解析
+        WxParse.wxParse("htmlStr", "html", this.desc, this,0);
+        this.$apply();
+    }
+
+    onUnload(){
+      
+    }
+  }
+</script>

@@ -1,0 +1,322 @@
+<style lang="less">
+page{
+    background-color: rgb(245,246,250);
+    padding: 0
+}
+.page{
+   width: 750rpx;
+   margin: 0;
+   padding: 0;
+   z-index: 99;
+   .search{
+        width: 750rpx;
+        height: 88rpx;
+        position: fixed;
+        top:0;
+        left: 0;
+        background-color: #ffffff;
+        z-index: 99;
+        view{
+            width: 692rpx;
+            border-radius: 68rpx;
+            background-color: rgb(245,246,250);
+            text-align: center;
+            color: rgb(170, 170,170);
+            font-size: 26rpx;
+            line-height: 68rpx;
+            margin: 10rpx auto 10rpx auto;
+        }
+        image{
+            width: 34rpx;
+            height: 38rpx;
+            position: relative;
+            top:12rpx
+        }
+    }
+   .page-head{
+       background-color: #ffffff;
+       width: 750rpx;
+       padding-top: 10rpx;
+        .select{
+            padding: 30rpx 30rpx 10rpx 30rpx;
+            margin: 68rpx 0 0 0;
+            .title{
+               text-align: center;
+               padding-bottom: 38rpx;
+               .title-cen{
+                    font-family: PingFangSC-Semibold;
+                    font-size: 32rpx;
+                    color: rgb(66,56,57);
+               }
+               .title-rig{
+                   float: right;
+                   font-size: 24rpx;
+                   color: rgb(120, 115 ,116);
+                   margin-top: -50rpx;
+                   margin-right: -20rpx;
+                   image{
+                        width: 32rpx;
+                        height: 36rpx;
+                        position: relative;
+                        right: 10rpx;
+                        top: 8rpx
+                   }
+               }
+            }
+        }
+        .select-body{
+            width: 690rpx;
+            height: 400rpx;
+            background-size: 690rpx 400rpx;
+            border-radius: 10rpx;
+            .body-status{
+                height: 56rpx;
+                line-height: 56rpx;
+                position: relative;
+                top: 343rpx;
+                left: 0;
+                .status{
+                    background-color: rgb(255, 194, 51);
+                    padding: 10rpx 12rpx 10rpx 20rpx;
+                    border-bottom-left-radius: 10rpx;
+                    color: rgb(0, 0, 0);
+                    font-size: 26rpx;
+                    font-family: PingFangSC-Medium;
+                }
+                .time{
+                    background-color: rgb(245, 246, 250);
+                    padding: 7rpx 26rpx 8rpx 26rpx;
+                    color: rgb(0, 0, 0);
+                    font-size: 30rpx;
+                    font-family: PingFangSC-Regular;
+                    opacity: .6;
+                }
+            }
+
+        }
+        .select-name{
+            .name-left{
+               display: inline-block;
+               .left-name{
+                  font-family: PingFangSC-Semibold;
+                  font-size: 32rpx;
+                  color: rgb(66, 56, 57)
+               }
+               .left-time{
+                  font-family: PingFangSC-Regular;
+                  opacity: 0.6;
+                  font-size: 26rpx;
+                  color: rgb(120,115,116);
+                  font-weight: 600;
+               }
+            }
+            .name-right{
+               display: inline-block;
+               position: relative;
+               right: -190rpx;
+               image{
+                  width: 50rpx;
+                  height: 50rpx;
+                  position: relative;
+                  right: -40rpx;
+                  top: 10rpx;
+               }
+               view{
+                  font-family: PingFangSC-Regular;
+                  font-size: 24rpx;
+                  color: rgb(120,115,116)
+               }
+            }
+        }
+   }
+   .recommend{
+       .title{
+            padding-top: 40rpx;
+            text-align: center;
+            font-family: PingFangSC-Semibold;
+            font-size: 32rpx;
+            color: rgb(66,56,57);
+       }
+       .goodslist{
+           width: 690rpx;
+           margin: 0 auto;
+           .good{
+               width: 345rpx;
+               display: inline-block;
+               margin:30rpx auto 0 auto;
+               .block{
+                   width: 332rpx;
+                   margin: 0 auto;
+                    image{
+                        width: 332rpx;
+                        height: 332rpx;
+                        border-top-right-radius: 20rpx;
+                        border-top-left-radius: 20rpx;
+                    }
+                    .block-bottom{
+                        margin-top: -10rpx;
+                        background-color: #ffffff;
+                        .name{
+                            font-family: PingFangSC-Regular;
+                            font-size: 30rpx;
+                            color: rgb(69,59,60);
+                            margin-left: 10rpx;
+                        }
+                        .price{
+                            color: rgb(250,175,12);
+                            font-size: 36rpx;
+                            margin-left: 10rpx;
+                            .text{
+                                font-family: PingFangSC-Semibold;
+                                font-size: 30rpx;
+                                color: rgb(69,59,60)
+                            }
+                        }
+                        .time{
+                            font-family: PingFangSC-Regular;
+                            font-size: 22rpx;
+                            color: rgb(120,115,116);
+                            margin-left: 10rpx;
+                            line-height: 50rpx;
+                            display: flex;
+                            image{
+                                width: 40rpx;
+                                height: 40rpx;
+                                margin-top: 5rpx;  
+                            }
+                            .marginL{
+                                margin-left: 24rpx;
+                            }
+                            text{
+                                display: inline-block;
+                            }
+                            .self-support{
+                                font-family: PingFangSC-Regular;
+                                font-size: 20rpx;
+                                color: rgb(250, 175, 12);
+                                border-radius: 30rpx;
+                                height: 30rpx;
+                                width: 60rpx;
+                                line-height: 30rpx;
+                                text-align: center;
+                                border: 1rpx solid  rgb(250, 175, 12);
+                                position: relative;
+                                right: -70rpx;
+                                top: 6rpx
+                           }
+                        }
+                    }
+               }
+           }
+       }
+   }
+}
+</style>
+<template>
+  <view class="page">
+  <view class="search">
+    <view>
+    <image src="../static/images/sc_search_gray@3x.png"/>
+    大家都在搜索泥春华
+    </view> 
+  </view>
+  <scroll-view scroll-y scroll-with-animation>
+    <view class="page-head">
+      <view class="select">
+          <view class="title">
+               <view class="title-cen">精选专场</view>
+               <view class="title-rig">查看全部
+                   <image src="../static/images/sy_jinrudianpu_jiantou@3x.png" />
+               </view>
+          </view>
+          <view class="select-body" style="background-image: url('https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1551326291&di=f5bb221173e1836cd2208533f88d8fd0&src=http://pic2.ooopic.com/12/48/33/39bOOOPIC10_1024.jpg')">
+              <view class="body-status">
+                  <text class="status">拍卖中</text>
+                  <text class="time">距离结束 <text>06</text>天<text>23</text>时<text>59</text>分<text>56</text>秒</text>
+              </view>
+          </view>
+          <view class="select-name">
+              <view class="name-left">
+                  <view class="left-name">茗事器语-日本茶道具专场</view>
+                  <view class="left-time">2018-08-07 19:25</view>
+              </view>
+              <view class="name-right">
+                  <image src="../static/images/people.png" />
+                  <view>1262次围观</view>
+              </view>
+          </view>
+      </view>
+    </view>
+    <view class="recommend">
+         <view class="title">推荐拍品</view>
+         <view class="goodslist">
+             <view class="good" wx:key="this" wx:for="{{[1,2,3,4,5]}}">
+                 <view @tap="toGoodsInfo" data-id="{{index}}" class="block">
+                    <image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2379851857,3243896789&fm=26&gp=0.jpg"  mode lazy-load>
+                    <view class="block-bottom">
+                        <view class="name"> 拍品名称</view>
+                        <view class="price"><text class="text"> 当前价：</text>¥98000</view>
+                        <view class="time">
+                            <image src="../static/images/time_1.png" />
+                            <text>1日</text> 
+                            <image class="marginL" src="../static/images/paimai.png" />
+                            <text>11次</text>
+                            <text class="self-support">自营</text>
+                        </view>
+                    </view>
+                 </view>
+             </view>
+         </view>
+    </view>
+    <i-load-more tip="{{tip}}" loading="{{isLoading}}"/>
+  </scroll-view>
+  <login show="{{show}}" bind:_close ="close"/>
+  </view>
+</template>
+
+<script>
+  import wepy from 'wepy'
+  export default class home extends wepy.page {
+    config = {
+      navigationBarTitleText: '茗探',
+      usingComponents: {
+          'login': '../components/custom/login/login',
+          'i-load-more': '../components/base/load-more/index',
+      }
+    }
+
+    data = {
+       show:true,//登陆弹窗
+       isLoading:false,
+       tip:""
+    }
+    methods={
+      close(){
+         this.show = true;
+         this.$apply()
+      },
+      toGoodsInfo(e){
+        let id = e.currentTarget.dataset.id;
+        wx.navigateTo({url:`goods-info?id=${id}`})
+      }
+    }
+    //触底加载
+	onReachBottom() {
+        setTimeout(() => {
+           this.isLoading=true;
+           this.$apply()
+        },2000)
+		
+	}
+    computed = {
+     
+    }
+    async onLoad() {
+    
+    }
+
+    onUnload(){
+      
+    }
+  }
+</script>
