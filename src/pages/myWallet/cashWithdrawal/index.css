@@ -1,0 +1,152 @@
+page{
+    background-color: #f5f6fa;
+}
+.pay-block{
+    width: 690rpx;
+    padding: 30rpx;
+    margin-bottom: 10rpx;
+    background-color: #ffffff
+}
+.pay-money{
+    height: 60rpx;
+    padding-bottom: 22rpx;
+    border-bottom: solid 0.5px #e6e6e6;
+}
+.pay-money text{
+    font-family: PingFang-SC;
+    font-size: 26rpx;
+    font-weight: 500;
+    color: #423839;
+    float: left;
+    line-height: 60rpx;
+}
+.pay-money input{
+    font-family: PingFang-SC;
+    font-size: 26rpx;
+    color: #faaf0c;
+    float: right;
+    text-align: right;
+    position: relative;
+    top: 5rpx;
+}
+.all{
+    height: 70rpx;
+    padding-top: 22rpx;
+}
+.all-left{
+    float: left;
+    font-family: PingFang-SC;
+    font-size: 26rpx;
+    font-weight: 500;
+    color: #423839;
+}
+.all-btn{
+    float: right;
+    padding: 6rpx 18rpx;
+    border-radius: 6rpx;
+    border: solid 3rpx #a0c69c;
+    font-family: PingFang-SC;
+    font-size: 26rpx;
+    font-weight: 500;
+    text-align: center;
+    color: #a0c69c;
+    position: relative;
+    top: 10rpx;
+}
+.pay-type{
+    width: 690rpx;
+    padding:0 30rpx;
+    background-color: #ffffff;
+}
+.pay-title{
+    height: 72rpx;
+    line-height: 72rpx;
+    font-family: PingFangSC;
+    font-size: 26rpx;
+    color: #423839;
+    border-bottom: solid 1rpx #e6e6e6;
+}
+.pay-method{
+    padding: 22rpx 0;
+    height: 60rpx;
+    line-height: 60rpx;
+}
+.pay-method image{
+    width: 60rpx;
+    height: 60rpx; 
+    display: inline-block;
+    margin-right: 10rpx;
+}
+.pay-method .text{
+    font-family: PingFangSC;
+    font-size: 26rpx;
+    color: #666666;
+    display: inline-block;
+    position: relative;
+    top: -20rpx;
+}
+.pay-method text{
+    float: right;
+    border-radius: 6rpx;
+    background-color: #a0c69c;
+    font-family: PingFangSC;
+    font-size: 26rpx;
+    padding: 0rpx 18rpx;
+    text-align: center;
+    color: #ffffff;
+}
+.pay-method-2{
+    padding: 22rpx 0;
+    height: 60rpx;
+    border-bottom: solid 1rpx #e6e6e6;
+}
+.pay-method-2 image{
+    width: 60rpx;
+    height: 60rpx;
+    display: inline-block;
+}
+.pay-method-2 .pay-explain{
+    display: inline-block;
+    position: relative;
+    left: 10rpx;
+    top: -5rpx;
+}
+.pay-explain view:nth-child(1){
+    font-family: PingFangSC;
+    font-size: 26rpx;
+    color: #666666;
+}
+.pay-explain view:nth-child(2){
+    font-family: PingFangSC;
+    font-size: 20rpx;
+    color: #666666;
+}
+checkbox{
+    position: relative;
+    float: right;
+}
+.pay-bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 750rpx;
+    height: 100rpx;
+    background-color: #ffffff;
+    box-shadow: 0 -4rpx 4px 0 rgba(243, 243, 243, 0.5);
+}
+.pay-bottom-phoneModel{
+    padding-bottom: 68rpx;
+}
+.pay-bottom-pay{
+    width: 720rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    margin: 10rpx auto;
+    text-align: center;
+    border-radius: 80rpx;
+    background-color: #ffc233;
+    font-family: PingFangSC;
+    font-size: 30px;
+    color: #000000;
+}
+

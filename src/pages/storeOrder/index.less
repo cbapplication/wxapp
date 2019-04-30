@@ -1,0 +1,115 @@
+@white-50:#e6e6e6;
+page{
+    background-color: rgb(245,246,250);
+    padding: 0;
+}
+.page{
+   width: 750rpx;
+   margin: 0;
+   padding: 0;
+   .order-menu{
+     width: 750rpx;
+     height: 90rpx;
+     display: flex;
+     line-height: 90rpx;
+     background-color: #ffffff;
+     position: fixed;
+     top: 0;
+     left: 0;
+     font-family: PingFangSC;
+     font-size: 28rpx;
+     color: #423839;
+     text-align: center;
+     z-index: 999;
+     box-shadow: 0 2rpx 12rpx 2rpx @white-50;
+     >View{
+       flex: 1;
+       > .active{
+        font-weight: 600;
+        padding-bottom: 16rpx;
+        border-bottom: 6rpx solid  #fdc545;
+      }
+     }
+   }
+    .order-list{
+           margin-top: 90rpx;
+           .page-item{
+            width: 670rpx;
+            height: 320rpx;
+            border-radius: 8rpx;
+            background-color: #ffffff;
+            padding: 0 20rpx;
+            margin: 20rpx;
+            .order-radio{
+                border-bottom: solid 0.5px #e6e6e6;
+                width: 670rpx;
+                height: 60rpx;
+                line-height: 60rpx;
+                .text-1{
+                    font-family: PingFangSC;
+                    font-size: 26rpx;
+                    color: #423839;
+                }
+                text:nth-last-child(1){
+                    font-family: PingFangSC;
+                    font-size: 26rpx;
+                    color: #423839;
+                    float: right;
+                }
+            }
+            .order-content{
+                border-bottom: solid 0.5px #e6e6e6;
+                width: 670rpx;
+                padding: 20rpx 0;
+                height: 140rpx;
+                image{
+                width: 140rpx;
+                height: 140rpx;
+                border-radius: 10rpx;
+                background-color:  #d8d8d8;
+                display: inline-block;
+                }
+                .order-info{
+                    display: inline-block;
+                    position: relative;
+                    top: -40rpx;
+                    left: 20rpx;
+                    view:nth-child(1){
+                        font-family: PingFangSC;
+                        font-size: 28rpx;
+                        color: #423839;
+                        width: 500rpx;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                    view:nth-child(2){
+                        font-family: PingFangSC;
+                        font-size: 26rpx;
+                        color: #423839;
+                    }
+                    view:nth-child(3){
+                        font-family: PingFangSC;
+                        font-size: 24rpx;
+                        color: #787374;
+                    }
+                }
+            }
+            .order-price{
+                float: right;
+                height: 32rpx;
+                line-height: 32rpx;
+                padding: 20rpx 0;
+                font-family: PingFangSC;
+                font-size: 26rpx;
+                font-weight: 600;
+                text-align: right;
+                color: #423839; 
+                text{
+                color: #fbbb30;
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,132 @@
+.box{
+    width: 750rpx;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left:0;
+    opacity: 0.7;
+    background-color: #000000;
+    z-index: 999;
+    transition: all .3s ease-in-out;
+}
+.model{
+    visibility: visible;
+    position: fixed;
+    width: 650rpx;
+    bottom: 0;
+    left: 0;
+    transform: translateY(0%);
+    transition: all .3s ease-in-out;
+    opacity: 1;
+    padding: 10rpx 50rpx 150rpx 50rpx;
+    background-color: #ffffff;
+    z-index: 1000;
+    border-top-left-radius: 24rpx;
+    border-top-right-radius: 24rpx;
+}
+/* 适配iPhoneX */
+.model-phone-offer{
+    padding-bottom: 180rpx
+}
+.hidden{
+    visibility: hidden;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.model-close{
+    width: 60rpx;
+    height: 60rpx;
+    margin: 0 auto 30rpx auto;
+}
+.model-close image{
+    width: 60rpx;
+    height: 60rpx;
+    transform:rotate(90deg);
+}
+.model-title{
+    border-bottom: 1rpx solid #e6e6e6;
+    padding-bottom: 30rpx;
+}
+.model-title image{
+    display: inline-block;
+    width: 180rpx;
+    height: 180rpx;
+    border-radius: 10rpx;
+    background-color: #d8d8d8;
+}
+.model-goodsInfo{
+    margin-left: 20rpx;
+    display: inline-block;
+    position: relative;
+    top: -1s0rpx;
+}
+.model-goodsInfo text{
+    font-family: PingFangSC;
+    font-size: 36rpx;
+    font-weight: 500;
+    color: #faaf0c;
+}
+.model-goodName{
+    font-family: PingFangSC;
+    font-size: 32rpx;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #423839;
+    padding-bottom: 18rpx;
+    width: 450rpx;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+.model-goodPrice{
+    font-family: PingFangSC;
+    font-size: 26rpx;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #787374;
+}
+.model-range{
+    font-family: PingFangSC;
+    font-size: 26rpx;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #787374;
+}
+.scroll{
+    max-height: 600rpx;
+}
+.noMore{
+    text-align: center;
+    color: #787374;
+    font-size: 26rpx;
+    padding: 50rpx;
+}
+.model-record{
+    width: 100%;
+    height: 83rpx;
+    padding-top: 30rpx;
+}
+.model-left{
+    font-family: PingFangSC;
+    font-size: 32rpx;
+    font-weight: 500;
+    color: #faaf0c;
+    float: left;
+    line-height: 69rpx;
+}
+.model-right{
+    font-family: PingFangSC;
+    font-size: 26rpx;
+    color: #b0b0b0;
+    float: right;
+    text-align: right
+}

@@ -1,0 +1,35 @@
+
+.modal{
+    visibility: visible;
+    position: fixed;
+    top: 45%;
+    left: 240rpx;
+    width: 270rpx;
+    transform: scale(1,1);
+    transition: all .2s ease-in;
+    padding:  30rpx 0;
+    border-radius: 8rpx;
+    background-color: #000000;
+    opacity: .8;
+    z-index: 2000;
+}
+.model-hidden{
+    visibility: hidden;
+    transform: scale(0)
+}
+.model-image{
+    width: 54rpx;
+    height: 54rpx;
+    margin-left: 108rpx
+}
+.model-msg{
+    font-family: PingFangSC;
+    font-size: 26rpx;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    text-align: center
+}

@@ -1,0 +1,174 @@
+@white-50:#e6e6e6;
+page{
+  background-color: rgb(245,246,250);
+  padding: 0;
+}
+.page{
+  width: 750rpx;
+  margin: 0;
+  padding: 0;
+  z-index: 99;
+  .search{
+        width: 750rpx;
+        height: 88rpx;
+        position: fixed;
+        top:0;
+        left: 0;
+        background-color: #ffffff;
+        z-index: 99;
+        view{
+            width: 692rpx;
+            border-radius: 68rpx;
+            background-color: rgb(245,246,250);
+            text-align: center;
+            color: rgb(170, 170,170);
+            font-size: 26rpx;
+            line-height: 68rpx;
+            margin: 10rpx auto 10rpx auto;
+        }
+        image{
+            width: 38rpx;
+            height: 38rpx;
+            position: relative;
+            top:12rpx
+        }
+  }
+  .page-block{
+    margin-top: 88rpx;
+    .goods-category{
+      width: 710rpx;
+      border-radius: 8rpx;
+      background-color: #ffffff;
+      margin: 16rpx auto;
+      .title{
+        font-family: PingFangSC;
+        font-size: 32rpx;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #423839;
+        padding: 12rpx 20rpx;
+      } 
+      .cate-list{
+        width: 680rpx;
+        padding: 0 40rpx;
+        .list-item{
+          width: 180rpx;
+          height: 200rpx;
+          display: inline-block;
+          background-size: 180rpx 200rpx;
+          border-radius: 12rpx;
+          margin: 0 44rpx 20rpx 0;
+          background-color:  #d8d8d8;
+          .list-bottom{
+            width: 180rpx;
+            height: 72rpx;
+            opacity: 0.8;
+            border-bottom-left-radius: 12rpx;
+            border-bottom-right-radius: 12rpx;
+            background-color: #ffffff;
+            position: relative;
+            top: 128rpx;
+            .list-title{
+              font-family: PingFangSC;
+              font-size: 26rpx;
+              font-weight: 500;
+              text-align: center;
+              color: #423839;
+            }
+            .list-num{
+              font-family: PingFangSC;
+              font-size: 20rpx;
+              text-align: center;
+              color: #423839;
+            }
+          }
+        }
+      }
+    }
+    .store-selected{
+      width: 710rpx;
+      border-radius: 8rpx;
+      background-color: #ffffff;
+      margin: 16rpx auto;
+      padding-bottom: 20rpx;
+      .title{
+        font-family: PingFangSC;
+        font-size: 32rpx;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #423839;
+        padding: 12rpx 20rpx;
+      } 
+      .store{
+        width: 670rpx;
+        height: 120rpx;
+        border-radius: 8rpx;
+        box-shadow: 0 0 12rpx 2rpx @white-50;
+        background-color: #ffffff;
+        margin: 0 auto 20rpx auto;
+       image{
+           display: inline-block;
+           width: 72rpx;
+           height: 72rpx;
+           border-radius: 72rpx;
+           position: relative;
+           left: 20rpx;
+           top: 25rpx;
+           margin-right: 10rpx;
+           background-color:  #d8d8d8;
+       }
+       .detail{
+           display: inline-block;
+           position: relative;
+           top: 20rpx;
+           left: 34rpx;
+           padding-left: 20rpx;
+           border-left: solid 2rpx #f0f0f0;
+           .name{
+                font-family: PingFangSC;
+                font-size: 28rpx;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #423839;
+           }
+           .number{
+                width: 460rpx;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                font-family: PingFangSC;
+                font-size: 24rpx;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #797475;
+           }
+        }
+        .goStore{
+            float: right;
+            position: relative;
+            right: 20rpx;
+            top: 30rpx;
+              image{
+                  width: 40rpx;
+                  height: 40rpx;
+                  position: relative;
+                  top: 10rpx;
+                  right: 15rpx;
+                  background-color: #fff;
+              }
+        }
+      }
+    }
+  }
+}

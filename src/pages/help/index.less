@@ -1,0 +1,76 @@
+@white-50:#e6e6e6;
+page{
+  background-color:#ffffff;
+  padding: 0;
+}
+.page{
+  width: 750rpx;
+  margin: 0;
+  padding: 0;
+  z-index: 99;
+    .menu{
+        width: 708rpx;
+        z-index: 99;
+        border-bottom: 2rpx solid  rgb(245,246,250);
+        position: fixed;
+        top: 0rpx;
+        left: 0;
+        .menu-scroll{
+            background-color: #ffffff;
+            height: 90rpx;
+            line-height: 90rpx;
+            white-space: nowrap;
+            padding-left: 42rpx;
+            .menu-item{
+                display: inline-block;
+                padding: 0;
+                height: 84rpx;
+                font-family: PingFangSC;
+                font-size: 32rpx;
+                color: #423839;
+                margin-right: 60rpx;
+            }
+            .active{
+                font-weight: 600;
+                border-bottom: 6rpx solid #ffc233;
+            }
+        }
+        .menu-sort{
+            width: 708rpx;
+            padding: 22rpx 0 22rpx 42rpx;
+            display: flex;
+            border-top: 1rpx solid #e6e6e6;
+            background-color: #ffffff;
+            .sort-item{
+                height: 36rpx;
+                padding: 0 29.5rpx;
+                text-align: center;
+                font-family: PingFangSC;
+                font-size: 26rpx;
+                color: #423839;
+                border-right: solid 1rpx #e6e6e6;
+                image{
+                    width: 50rpx;
+                    height: 50rpx;
+                    float: right;
+                    position: relative;
+                    top: -6rpx;
+                }
+            }
+            .active{
+                font-weight: 600;
+            }
+            .sort-first{
+                padding-left: 0
+            }
+            .sort-last{
+                border: none
+            }
+        }
+    }
+     .goods-info-desc {
+        margin-top: 100rpx;
+        padding: 20rpx;
+        background-color: #ffffff;
+	}
+}

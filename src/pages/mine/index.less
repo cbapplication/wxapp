@@ -1,0 +1,301 @@
+@white-50: #e6e6e6;
+
+page {
+  background-color: rgb(245, 246, 250);
+  padding: 0
+}
+
+.page-background {
+  width: 750rpx;
+  height: 20rpx;
+  background-color: #f5f6fa;
+}
+
+.page {
+  width: 750rpx;
+  margin: 0;
+  padding: 0;
+
+  .page-head {
+    width: 750rpx;
+    height: 65rpx;
+    background-color: #ffc233;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .mine {
+    padding-bottom: 20rpx;
+
+    .mine-head {
+      width: 690rpx;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border-radius: 8rpx;
+      padding: 0 0 60rpx 0;
+
+      .head-user {
+        width: 690rpx;
+        height: 290rpx;
+        border-radius: 8rpx;
+        box-shadow: 0 18rpx 16rpx 0 rgba(221, 189, 95, 0.14);
+        background-color: #ffffff;
+
+        .head-cover {
+          display: inline-block;
+          background-color: #ece7e4;
+          width: 128rpx;
+          height: 128rpx;
+          border-radius: 128rpx;
+        }
+
+        .detail {
+          display: inline-block;
+          position: relative;
+          left: 60rpx;
+          border: 0 none;
+          background-color: #ffffff;
+          padding: 0;
+
+          .name {
+            font-family: PingFangSC;
+            font-size: 32rpx;
+            font-weight: 600;
+            color: #423839;
+            text-align: left
+          }
+
+          &::after {
+            border: 0 none;
+          }
+
+          .number {
+            font-family: PingFangSC;
+            font-size: 24rpx;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #797475;
+          }
+        }
+
+        .header{
+          position: relative;
+          left: 40rpx;
+          top: 40rpx;
+          width: 128rpx;
+          height: 128rpx;
+          display: inline-block;
+          border: 0 none;
+          background-color: #ffffff;
+          padding: 0;
+          &::after {
+            border: 0 none;
+          }
+        }
+
+        .image-set {
+          width: 60rpx;
+          height: 60rpx;
+          float: right;
+          position: relative;
+          top: 52rpx;
+          right: 40rpx;
+        }
+
+        .mine-wallet {
+          position: relative;
+          top: 60rpx;
+          height: 38rpx;
+          border-bottom-left-radius: 8rpx;
+          border-bottom-right-radius: 8rpx;
+          background-color: #423839;
+          padding: 26rpx 10rpx 26rpx 40rpx;
+
+          .wallet-left {
+            font-family: PingFangSC;
+            font-size: 30rpx;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #f0e9d8;
+            float: left;
+          }
+
+          .wallet-right {
+            font-family: PingFangSC;
+            font-size: 24rpx;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #f0e9d8;
+            float: right;
+            margin-top: 3rpx;
+          }
+
+          image {
+            width: 40rpx;
+            height: 40rpx;
+            float: right;
+          }
+        }
+      }
+
+      .user-manage {
+        display: flex;
+        flex: 3;
+
+        .manage-item {
+          flex: 1;
+          padding-top: 32rpx;
+
+          image {
+            width: 90rpx;
+            height: 90rpx;
+            object-fit: contain;
+            position: relative;
+            left: 70rpx;
+          }
+
+          view {
+            font-family: PingFangSC;
+            font-size: 26rpx;
+            text-align: center;
+            color: #423839;
+          }
+        }
+      }
+    }
+  }
+
+  .page-my-store {
+    width: 690rpx;
+    padding: 40rpx 30rpx;
+    background-color: #ffffff;
+    margin-bottom: 20rpx;
+    .title {
+      font-family: PingFangSC;
+      font-size: 32rpx;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #423839;
+      padding-bottom: 40rpx;
+    }
+    .user-manage {
+      display: flex;
+      flex: 3;
+
+      .manage-item {
+        flex: 1;
+        padding-top: 32rpx;
+
+        image {
+          width: 90rpx;
+          height: 90rpx;
+          object-fit: contain;
+          position: relative;
+          left: 70rpx;
+        }
+
+        view {
+          font-family: PingFangSC;
+          font-size: 26rpx;
+          text-align: center;
+          color: #423839;
+        }
+      }
+    }
+  }
+
+  .store-selected {
+    width: 690rpx;
+    background-color: #ffffff;
+    padding: 40rpx 30rpx;
+
+    .title {
+      font-family: PingFangSC;
+      font-size: 32rpx;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #423839;
+      padding-bottom: 40rpx;
+    }
+
+    .store {
+      width: 690rpx;
+      height: 120rpx;
+      border-radius: 8rpx;
+      box-shadow: 0 0 12rpx 2rpx @white-50;
+      background-color: #ffffff;
+      margin: 0 auto 20rpx auto;
+
+      .image {
+        display: inline-block;
+        width: 80rpx;
+        height: 80rpx;
+        border-radius: 12rpx;
+        box-shadow: 0 0 16rpx 2rpx @white-50;
+        position: relative;
+        left: 20rpx;
+        top: 20rpx;
+        margin-right: 10rpx;
+        background-color: #d8d8d8;
+      }
+
+      .detail {
+        display: inline-block;
+        position: relative;
+        top: 8rpx;
+        left: 30rpx;
+        padding-left: 20rpx;
+
+        .name {
+          font-family: PingFangSC;
+          font-size: 28rpx;
+          color: #453b3c;
+        }
+
+        .number {
+          font-family: PingFangSC;
+          font-size: 22rpx;
+          ;
+          color: #787374;
+        }
+      }
+
+      .goStore {
+        float: right;
+        position: relative;
+        top: 20rpx;
+        right: 20rpx;
+        font-family: PingFangSC;
+        font-size: 24rpx;
+        text-align: right;
+        line-height: 85rpx;
+        color: #787374;
+
+        image {
+          width: 40rpx;
+          height: 40rpx;
+          position: relative;
+          top: 12rpx;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}

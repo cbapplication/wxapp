@@ -1,0 +1,64 @@
+.show{
+    visibility: visible;
+}
+.hidden{
+    visibility: hidden;
+}
+.box{
+    width: 750rpx;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left:0;
+    opacity: 0.7;
+    /* transition: all .2s ease-in-out; */
+    background-color: #000000;
+    z-index: 1003;
+}
+.modal{
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500rpx;
+    height: 889.4rpx;
+    background-color: #ffffff;
+    z-index: 1004;
+    opacity: 1;
+}
+.model-hidden{
+    display: none;
+}
+.saveImage{
+    width: 540rpx;
+    height: 80rpx;
+    position: relative;
+    left: -20rpx;
+    top: 40.6rpx;
+    border-radius: 49px;
+    background-color: #ffc233;
+    font-size: 30rpx;
+    text-align: center;
+    line-height: 80rpx;
+}
+.model-image{
+    width: 90rpx;
+    height: 90rpx;
+    float: right;
+    position: relative;
+    left: 45rpx;
+    top: -45rpx;
+    z-index: 1009;
+}
+.model-cover{
+    position: fixed;
+    top: 0rpx;
+    left: 411.8rpx;
+    width: 90rpx;
+    height: 90rpx;
+    z-index: 1009;
+}
+.model-image{
+    width: 90rpx;
+    height: 90rpx;
+}

@@ -1,0 +1,38 @@
+.layer-box {
+  width: 750px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  background-color: #000000;
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+}
+.layer-content {
+  visibility: visible;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: translateY(0%);
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+  box-sizing: border-box;
+  padding: 50px 50px 10px;
+  background-color: #ffffff;
+  z-index: 1003;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  .arrow {
+    top: 0;
+    padding: 20px 30px;
+    width: 28px;
+    height: 16px;
+  }
+}
+.hidden {
+  visibility: hidden;
+  transform: translateY(100%);
+  opacity: 0;
+}

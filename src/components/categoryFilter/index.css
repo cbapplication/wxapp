@@ -1,0 +1,135 @@
+.box{
+    width: 750rpx;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left:0;
+    opacity: 0.7;
+    background-color: #000000;
+    z-index: 999;
+    transition: all .3s ease-in-out;
+}
+.model{
+    visibility: visible;
+    position: fixed;
+    width: 670rpx;
+    bottom: 0;
+    left: 0;
+    transform: translateY(0%);
+    transition: all .3s ease-in-out;
+    opacity: 1;
+    padding: 10rpx 40rpx;
+    background-color: #ffffff;
+    z-index: 1003;
+    border-top-left-radius: 24rpx;
+    border-top-right-radius: 24rpx;
+}
+.hidden{
+    visibility: hidden;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.model-close{
+    width: 60rpx;
+    height: 60rpx;
+    margin: 0 auto 10rpx auto;
+}
+.model-close image{
+    width: 60rpx;
+    height: 60rpx;
+    transform:rotate(90deg);
+}
+.model-title{
+    font-family: PingFangSC;
+    font-size: 36rpx;
+    font-weight: 600;
+    color: #000000;
+    border-bottom: 1rpx solid  #e6e6e6;
+    padding-bottom: 16rpx;
+}
+.model-tag{
+    font-family: PingFangSC;
+    font-size: 24rpx;
+    color: #453b3c;
+    padding: 20rpx 0;
+}
+.model-block view{
+    display: inline-block;
+    width: 210rpx;
+    height: 60rpx;
+    border-radius: 30rpx;
+    background-color: #f0f0f0;
+    font-family: PingFangSC;
+    font-size: 24rpx;
+    line-height: 60rpx;
+    text-align: center;
+    color: #423839;
+    margin-right: 20rpx;
+}
+.model-block .model-btn-active{
+    background-color: #ffc233;
+}
+.model-block view:nth-last-child(1){
+    margin-right: 0;
+}
+.model-margin-bottom{
+    margin-bottom: 324rpx;
+}
+.model-section input{
+    display: inline-block;
+    width: 300rpx;
+    height: 60rpx;
+    border-radius: 30rpx;
+    background-color: #f0f0f0;
+    font-family: PingFangSC;
+    font-size: 24rpx;
+    line-height: 60rpx;
+    text-align: center;
+    color: #b7b2b3;
+}
+.model-line{
+    display: inline-block;
+    width: 20rpx;
+    height: 2rpx;
+    background-color: #423839;
+    position: relative;
+    top: -8rpx;
+    margin: 0 20rpx
+}
+.model-bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 750rpx;
+    padding: 10rpx 16rpx;
+}
+.model-bottom-phoneModel{
+    padding-bottom: 68rpx;
+}
+.model-bottom view{
+    display: inline-block
+}
+.model-left-btn{
+    width: 359rpx;
+    height: 80rpx;
+    background-color: #feefcc;
+    font-family: PingFangSC;
+    font-size: 30rpx;
+    line-height: 80rpx;
+    text-align: center;
+    color: #000000;
+    border-top-left-radius: 49rpx;
+    border-bottom-left-radius: 49rpx;
+}
+.model-right-btn{
+    width: 359rpx;
+    height: 80rpx;
+    background-color: #ffc233;
+    font-family: PingFangSC;
+    font-size: 30rpx;
+    line-height: 80rpx;
+    text-align: center;
+    color: #000000;
+    border-top-right-radius: 49rpx;
+    border-bottom-right-radius: 49rpx;
+}

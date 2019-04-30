@@ -1,0 +1,171 @@
+page {
+  background-color: #F5F6FA;
+}
+
+.flow {
+  margin: 34px auto 60px;
+  padding: 50px;
+  width: 670px;
+  border-radius: 16px;
+  background-color: #fff;
+
+  .head {
+    margin-bottom: 52px;
+    letter-spacing: 5px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+  }
+
+  .content {
+    position: relative;
+  }
+
+  .content::after {
+    content: '';
+    position: absolute;
+    left: 35px;
+    top: 0;
+    width: 8px;
+    height: 100%;
+    background-color: #FFC233;
+  }
+
+  .item {
+    position: relative;
+    margin-bottom: 87px;
+    font-size: 28px;
+    color: #666;
+    padding-left: 114px;
+
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+
+    .tip-num {
+      left: 0;
+      z-index: 1;
+      width: 78px;
+      height: 78px;
+      line-height: 78px;
+      border-radius: 40px;
+      background-color: #FFC233;
+      font-size: 36px;
+      color: #000;
+      text-align: center;
+    }
+  }
+}
+
+.friendly-tips {
+  margin-left: 70px;
+  font-size: 24px;
+  color: #666;
+
+  .head {
+    margin-bottom: 24px;
+  }
+
+  .item {
+    margin-bottom: 40px;
+  }
+}
+
+.agreement {
+  margin: 146px auto 46px;
+  text-align: center;
+  font-size: 22px;
+  color: #666;
+}
+
+.service-btn,
+.agreement-btn {
+  position: relative;
+  padding-bottom: 1px;
+  margin-left: 10px;
+  color: #4A90E2;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #4A90E2;
+  }
+}
+
+.order-bottom {
+  width: 750rpx;
+  box-shadow: 0 -1px 6px 1px #e6e6e6;
+  background-color: #ffffff;
+  padding: 10rpx 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  view {
+    width: 720rpx;
+    height: 80rpx;
+    border-radius: 49rpx;
+    background-color: #ffc233;
+    margin: 0 auto;
+    font-family: PingFangSC;
+    font-size: 30rpx;
+    line-height: 80rpx;
+    text-align: center;
+    color: #000000;
+  }
+}
+
+.agreement-model {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  transform: scale(1, 1);
+  transition: all .2s ease-in;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  .close-btn {
+    position: absolute;
+    z-index: 3;
+    top: 20px;
+    right: 12px;
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+  }
+
+  .content-box {
+    padding-top: 36px;
+    width: 670px;
+    height: 980px;
+    background-color: #fff;
+    border-radius: 12px;
+  }
+
+  .head {
+    padding-bottom: 36px;
+    border-bottom: 1px solid #E6E6E6;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .content {
+    z-index: 1;
+    padding: 20px 34px 0;
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+.agreement-model.hide-model {
+  visibility: hidden;
+  transform: scale(0);
+}

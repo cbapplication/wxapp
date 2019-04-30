@@ -1,0 +1,101 @@
+@white-50:#e6e6e6;
+page{
+  background-color: rgb(245,246,250);
+  padding: 0;
+}
+.page{
+   width: 750rpx;
+   height: 100%;
+}
+.address-list{
+    margin-bottom: 100rpx;
+   .address-swiper{
+       margin-bottom: 10rpx;
+   }
+}
+.address-list-phone{
+    margin-bottom: 168rpx;
+}
+.address-bottom{
+    width: 750rpx;
+    box-shadow: 0 -2rpx 12rpx 2px @white-50;
+    background-color: #ffffff;
+    padding: 10rpx 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    view{
+        width: 720rpx;
+        height: 80rpx;
+        border-radius: 49rpx;
+        background-color: #ffc233;
+        margin: 0 auto;
+        font-family: PingFangSC;
+        font-size: 30rpx;
+        line-height: 80rpx;
+        text-align: center;
+        color: #000000;
+    }
+}
+.address-bottom-phone{
+    padding-bottom: 78rpx;
+}
+.i-swipeout-item{
+       padding: 20rpx 30rpx;
+       min-height: 130rpx;
+       .address-item{
+          display: inline-block;
+        }
+        .address-content{
+            width: 600rpx;
+            .address-username{
+                font-family: PingFangSC;
+                font-size: 30rpx;
+                color: #4b4242;
+                margin-bottom: 7rpx;
+                .phone{
+                    font-family: PingFangSC;
+                    font-size: 26rpx;
+                    color: #787374;
+                    padding-left: 8rpx;
+                }
+                .default{
+                    position: relative;
+                    bottom: 4px;
+                    background-color: #fffcdd;
+                    padding: 2rpx 10rpx;
+                    font-family: PingFangSC;
+                    font-size: 18rpx;
+                    color: #faaf00;
+                    text-align: center;
+                    border: 1px solid #fff695;
+                    border-radius: 5rpx;
+                    margin-left: 20rpx;
+                }
+            }
+            .address-address{
+                font-family: PingFangSC;
+                font-size: 26rpx;
+                text-align: justify;
+                color: #4b4242;
+            }
+        }
+        .address-edit{
+            font-family: PingFangSC;
+            font-size: 26rpx;
+            color: #787374;
+            position: relative;
+            top: 0rpx;
+            left:0rpx;
+            height: 130rpx;
+            vertical-align: middle;
+            float: right;
+            text{
+                position: relative;
+                top: 50rpx;
+                border-left: 2rpx solid #e6e6e6;
+                padding: 0 0 0 16rpx;
+            }
+           
+        }
+}

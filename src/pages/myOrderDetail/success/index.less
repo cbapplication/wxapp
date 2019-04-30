@@ -1,0 +1,71 @@
+@white-50:#ffffff;
+page{
+    background-color: @white-50;
+    padding: 0
+}
+.page{
+    .page-head{
+        width: 1400rpx;
+        height: 1350rpx;
+        border-radius: 600rpx;
+        background-color:  #ffc233;
+        position: fixed;
+        top: -20%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: -1
+    }
+    .success{
+        font-family: PingFang-SC;
+        font-size: 36rpx;
+        font-weight: bold;
+        text-align: center;
+        color: #423839;
+    }
+    .money{
+        opacity: 0.8;
+        font-family: PingFangSC;
+        font-size: 30rpx;
+        text-align: center;
+        color: #423839;
+        margin-top: 20rpx;
+    }
+    image{
+        width: 240rpx;
+        height: 240rpx;
+        display: block;
+        margin: 262rpx auto 0 auto;
+        z-index: 999;
+    }
+    .wallet-bottom{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 750rpx;
+        padding: 10rpx 16rpx;
+        background-color: #ffffff;
+        > view{
+            display: inline-block;
+            width: 359rpx;
+            height: 80rpx;
+            font-family: PingFangSC;
+            font-size: 30rpx;
+            line-height: 80rpx;
+            text-align: center;
+            color: #000000;
+        }
+        .wallet-left-btn{
+            background-color: #feefcc;
+            border-top-left-radius: 49rpx;
+            border-bottom-left-radius: 49rpx;
+        }
+        .wallet-right-btn{
+            background-color: #ffc233;
+            border-top-right-radius: 49rpx;
+            border-bottom-right-radius: 49rpx;
+        }
+    }
+    .wallet-bottom-phoneModel{
+        padding-bottom: 68rpx;
+    }
+}
